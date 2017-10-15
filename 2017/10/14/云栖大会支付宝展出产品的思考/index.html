@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="云栖大会,支付宝," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="吐槽作为参展商，在杭州待了四天，站台了四天，感觉腿要断了，这绝对不是人干的事情。看了支付宝的主场展示，可以总结一下。支付方式：新增了刷脸支付这应该是一个比较有亮点的产品了，仔细想想，支付宝其实已经好久没有出新的支付产品了。 解决方案云打印1.支付宝扫码2.选择要打印的文件3.支付并取走你的文件 茶水时间1.支付宝扫码2.选择物品3.支付取走 智能储物柜存：1支付宝扫码,2选择柜门并放入取：1支付宝">
+<meta name="keywords" content="云栖大会,支付宝">
+<meta property="og:type" content="article">
+<meta property="og:title" content="云栖大会支付宝展出产品的一些思考">
+<meta property="og:url" content="https://csl082512.github.io/2017/10/14/云栖大会支付宝展出产品的思考/index.html">
+<meta property="og:site_name" content="AARON CHAN的小站">
+<meta property="og:description" content="吐槽作为参展商，在杭州待了四天，站台了四天，感觉腿要断了，这绝对不是人干的事情。看了支付宝的主场展示，可以总结一下。支付方式：新增了刷脸支付这应该是一个比较有亮点的产品了，仔细想想，支付宝其实已经好久没有出新的支付产品了。 解决方案云打印1.支付宝扫码2.选择要打印的文件3.支付并取走你的文件 茶水时间1.支付宝扫码2.选择物品3.支付取走 智能储物柜存：1支付宝扫码,2选择柜门并放入取：1支付宝">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://csl082512.github.io/img/云栖大会智能储物柜.JPG">
+<meta property="og:image" content="https://csl082512.github.io/img/云栖大会智慧农业.JPG">
+<meta property="og:image" content="https://csl082512.github.io/img/云栖大会支付宝区块链.JPG">
+<meta property="og:image" content="https://csl082512.github.io/img/云栖大会智慧政务.JPG">
+<meta property="og:image" content="https://csl082512.github.io/img/云栖大会智慧校园.JPG">
+<meta property="og:image" content="https://csl082512.github.io/img/云栖大会共享图书.JPG">
+<meta property="og:image" content="https://csl082512.github.io/img/云栖大会信用就医.JPG">
+<meta property="og:image" content="https://csl082512.github.io/img/云栖大会医疗信用借还.JPG">
+<meta property="og:image" content="https://csl082512.github.io/img/云栖大会智能客服.JPG">
+<meta property="og:image" content="https://csl082512.github.io/img/云栖大会智慧酒店.JPG">
+<meta property="og:image" content="https://csl082512.github.io/img/云栖大会Github的展台.JPG">
+<meta property="og:updated_time" content="2017-10-15T07:35:17.894Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="云栖大会支付宝展出产品的一些思考">
+<meta name="twitter:description" content="吐槽作为参展商，在杭州待了四天，站台了四天，感觉腿要断了，这绝对不是人干的事情。看了支付宝的主场展示，可以总结一下。支付方式：新增了刷脸支付这应该是一个比较有亮点的产品了，仔细想想，支付宝其实已经好久没有出新的支付产品了。 解决方案云打印1.支付宝扫码2.选择要打印的文件3.支付并取走你的文件 茶水时间1.支付宝扫码2.选择物品3.支付取走 智能储物柜存：1支付宝扫码,2选择柜门并放入取：1支付宝">
+<meta name="twitter:image" content="https://csl082512.github.io/img/云栖大会智能储物柜.JPG">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://csl082512.github.io/2017/10/14/云栖大会支付宝展出产品的思考/"/>
+
+
+
+
+
+  <title>云栖大会支付宝展出产品的一些思考 | AARON CHAN的小站</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">AARON CHAN的小站</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">free ram is useless ram!</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://csl082512.github.io/2017/10/14/云栖大会支付宝展出产品的思考/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="AARON CHAN">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AARON CHAN的小站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">云栖大会支付宝展出产品的一些思考</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-14T16:00:11+08:00">
+                2017-10-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="吐槽"><a href="#吐槽" class="headerlink" title="吐槽"></a>吐槽</h1><p>作为参展商，在杭州待了四天，站台了四天，感觉腿要断了，这绝对不是人干的事情。<br>看了支付宝的主场展示，可以总结一下。<br>支付方式：<br>新增了刷脸支付<br>这应该是一个比较有亮点的产品了，仔细想想，支付宝其实已经好久没有出新的支付产品了。</p>
+<h1 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h1><h2 id="云打印"><a href="#云打印" class="headerlink" title="云打印"></a>云打印</h2><p>1.支付宝扫码<br>2.选择要打印的文件<br>3.支付并取走你的文件</p>
+<h2 id="茶水时间"><a href="#茶水时间" class="headerlink" title="茶水时间"></a>茶水时间</h2><p>1.支付宝扫码<br>2.选择物品<br>3.支付取走</p>
+<h2 id="智能储物柜"><a href="#智能储物柜" class="headerlink" title="智能储物柜"></a>智能储物柜</h2><p>存：<br>1支付宝扫码,2选择柜门并放入<br>取：<br>1支付宝扫码,2取出并关闭柜门,3手机确认并支付费用<br><img src="/img/云栖大会智能储物柜.JPG" alt="智能储物柜"></p>
+<h2 id="智慧农业"><a href="#智慧农业" class="headerlink" title="智慧农业"></a>智慧农业</h2><p>租借无人机自动播散农药<br><img src="/img/云栖大会智慧农业.JPG" alt="智慧农业"></p>
+<h2 id="公益事业-区块链"><a href="#公益事业-区块链" class="headerlink" title="公益事业+区块链"></a>公益事业+区块链</h2><p>支付宝森林，结合区块链服务<br><img src="/img/云栖大会支付宝区块链.JPG" alt="公益事业"></p>
+<h2 id="智慧政务"><a href="#智慧政务" class="headerlink" title="智慧政务"></a>智慧政务</h2><p>政府事务接入支付宝<br><img src="/img/云栖大会智慧政务.JPG" alt="智慧政务"></p>
+<h2 id="智慧校园"><a href="#智慧校园" class="headerlink" title="智慧校园"></a>智慧校园</h2><p>覆盖校园的支付宝服务：<br>1.线上缴费服务<br>2.线下电子校园卡<br>3.考勤体验<br>本质上，还是通过支付宝Q了一个校园卡账户，支付和普通的支付宝方式一致。<br><img src="/img/云栖大会智慧校园.JPG" alt="智慧校园"></p>
+<h2 id="信用城市"><a href="#信用城市" class="headerlink" title="信用城市"></a>信用城市</h2><p>覆盖雨伞借还、充电器借还、图书借还。<br>图书借还其实是一个共享的概念，操作方式如下:<br>借：<br>1.支付宝扫码，2.选择图书 3.授权验证支付确认借阅<br>还：<br>1.支付宝扫码，2.选择还书，柜门自动打开 3.放入书籍 4.确认<br>演示还是比较简陋的，很多都没有考虑，比如如何判别书籍等等一系列。<br><img src="/img/云栖大会共享图书.JPG" alt="信用城市"></p>
+<h2 id="AR照相馆"><a href="#AR照相馆" class="headerlink" title="AR照相馆"></a>AR照相馆</h2><p>通过AR的方式，能够和一个蚂蚁卡通照片拍照，类似皮卡丘的游戏，虚拟现实。</p>
+<h2 id="信用医疗"><a href="#信用医疗" class="headerlink" title="信用医疗"></a>信用医疗</h2><p>就医的自动化，线上挂号，电子医保卡，信用诊疗（听同事反映这个貌似比较难），商保直赔，健康管理。<br><img src="/img/云栖大会信用就医.JPG" alt="信用医疗"></p>
+<p>还包括医疗器械的共享和借还<br><img src="/img/云栖大会医疗信用借还.JPG" alt="信用医疗"></p>
+<h2 id="蚂蚁智能客服"><a href="#蚂蚁智能客服" class="headerlink" title="蚂蚁智能客服"></a>蚂蚁智能客服</h2><p>人工智能客服，没什么好说的<br>上一张有用的图吧<br><img src="/img/云栖大会智能客服.JPG" alt="智能客服"></p>
+<h2 id="智慧酒店"><a href="#智慧酒店" class="headerlink" title="智慧酒店"></a>智慧酒店</h2><p>覆盖酒店的全流程<br>入驻核身–信用支付–智能门锁–酒店服务–自助退房–自助开票<br>全程可以实现自动化。<br><img src="/img/云栖大会智慧酒店.JPG" alt="智慧酒店"></p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>以上是蚂蚁金服本次展览的一部分内容，其它的理财、金融之类的我就不想写了，我们大致看下它的重点：拿场景和入口。<br>所有的场景，无论是什么行业，和支付宝整合之后，都加上了智慧二字，入口起点就是支付宝扫一扫。扫一扫之后，就拿到了用户信息，通过对用户信息的处理，结合用户的信用、身份等基础数据，整合整个故事线，最终的目的就是，用支付宝支付。 不管这个场景是多么智能，不管这个场景是多么新奇，都逃不出最终的支付。<br>举个例子，拿智慧酒店来说，整个流程下来，最终的目的是为了更好的用支付宝支付，提高用户的频次和活跃度，否则如果只在最后的支付环节和微信拼，缺少碾压的实力。支付结合场景，最终是服务于支付。再加上最近推出的小程序，链接场景服务和支付。很早之前，我就预感，小程序是支付宝的一个机会，但是支付宝推出貌似晚了很多。<br>微信吸收了支付宝很多好的东西，支付宝呢？或许也是时候吸取下微信的精华了。</p>
+<h1 id="最棒的展台"><a href="#最棒的展台" class="headerlink" title="最棒的展台"></a>最棒的展台</h1><p>我觉得是这个，符合国外的一贯作风。<br><img src="/img/云栖大会Github的展台.JPG" alt="github"></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/云栖大会/" rel="tag"># 云栖大会</a>
+          
+            <a href="/tags/支付宝/" rel="tag"># 支付宝</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/10/08/国庆节看的电影/" rel="next" title="17年国庆节看的电影">
+                <i class="fa fa-chevron-left"></i> 17年国庆节看的电影
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/10/14/未来十年交互方式的变化/" rel="prev" title="未来10年交互方式的变化">
+                未来10年交互方式的变化 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="AARON CHAN" />
+          <p class="site-author-name" itemprop="name">AARON CHAN</p>
+           
+              <p class="site-description motion-element" itemprop="description">在这里，我会写一些我的想法，涉及行业、产品、金融、体育、动漫等一切我感兴趣的东西，如果能让你产生共鸣，我会很开心！</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">58</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">12</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#吐槽"><span class="nav-number">1.</span> <span class="nav-text">吐槽</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#解决方案"><span class="nav-number">2.</span> <span class="nav-text">解决方案</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#云打印"><span class="nav-number">2.1.</span> <span class="nav-text">云打印</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#茶水时间"><span class="nav-number">2.2.</span> <span class="nav-text">茶水时间</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#智能储物柜"><span class="nav-number">2.3.</span> <span class="nav-text">智能储物柜</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#智慧农业"><span class="nav-number">2.4.</span> <span class="nav-text">智慧农业</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#公益事业-区块链"><span class="nav-number">2.5.</span> <span class="nav-text">公益事业+区块链</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#智慧政务"><span class="nav-number">2.6.</span> <span class="nav-text">智慧政务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#智慧校园"><span class="nav-number">2.7.</span> <span class="nav-text">智慧校园</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#信用城市"><span class="nav-number">2.8.</span> <span class="nav-text">信用城市</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#AR照相馆"><span class="nav-number">2.9.</span> <span class="nav-text">AR照相馆</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#信用医疗"><span class="nav-number">2.10.</span> <span class="nav-text">信用医疗</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#蚂蚁智能客服"><span class="nav-number">2.11.</span> <span class="nav-text">蚂蚁智能客服</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#智慧酒店"><span class="nav-number">2.12.</span> <span class="nav-text">智慧酒店</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#最棒的展台"><span class="nav-number">4.</span> <span class="nav-text">最棒的展台</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">AARON CHAN</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
