@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="杀人游戏," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="TB大家都喜欢玩杀人游戏，作为其中的菜鸟，我要学习一下！在玩杀人游戏时如何提高分析能力？ - 朝雾夕 的回答 - 知乎 被人邀请来了啊…那好吧，我来谈谈这个问题。楼主的这个问题呢，也是许多人想问的问题；想必大家都刚开始玩的时候，完全是没有头绪的：别人怎么判断身份的？我为什么一点都听不懂呢？于是茫然失措。其实答案就在你的身边，我现在告诉你门在哪里，轻轻推开它你就能发现崭新的世界。杀人游戏乃至整个发言">
+<meta name="keywords" content="杀人游戏">
+<meta property="og:type" content="article">
+<meta property="og:title" content="杀人游戏">
+<meta property="og:url" content="https://csl082512.github.io/2017/11/18/杀人游戏/index.html">
+<meta property="og:site_name" content="AARON CHAN的小站">
+<meta property="og:description" content="TB大家都喜欢玩杀人游戏，作为其中的菜鸟，我要学习一下！在玩杀人游戏时如何提高分析能力？ - 朝雾夕 的回答 - 知乎 被人邀请来了啊…那好吧，我来谈谈这个问题。楼主的这个问题呢，也是许多人想问的问题；想必大家都刚开始玩的时候，完全是没有头绪的：别人怎么判断身份的？我为什么一点都听不懂呢？于是茫然失措。其实答案就在你的身边，我现在告诉你门在哪里，轻轻推开它你就能发现崭新的世界。杀人游戏乃至整个发言">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-12-03T11:10:24.450Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="杀人游戏">
+<meta name="twitter:description" content="TB大家都喜欢玩杀人游戏，作为其中的菜鸟，我要学习一下！在玩杀人游戏时如何提高分析能力？ - 朝雾夕 的回答 - 知乎 被人邀请来了啊…那好吧，我来谈谈这个问题。楼主的这个问题呢，也是许多人想问的问题；想必大家都刚开始玩的时候，完全是没有头绪的：别人怎么判断身份的？我为什么一点都听不懂呢？于是茫然失措。其实答案就在你的身边，我现在告诉你门在哪里，轻轻推开它你就能发现崭新的世界。杀人游戏乃至整个发言">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="https://csl082512.github.io/2017/11/18/杀人游戏/"/>
+
+
+
+
+
+  <title>杀人游戏 | AARON CHAN的小站</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">AARON CHAN的小站</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">free ram is useless ram!</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://csl082512.github.io/2017/11/18/杀人游戏/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="AARON CHAN">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="AARON CHAN的小站">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">杀人游戏</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-11-18T16:00:11+08:00">
+                2017-11-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>TB大家都喜欢玩杀人游戏，作为其中的菜鸟，我要学习一下！<br>在玩杀人游戏时如何提高分析能力？ - 朝雾夕 的回答 - 知乎</p>
+<p>被人邀请来了啊…那好吧，我来谈谈这个问题。<br>楼主的这个问题呢，也是许多人想问的问题；想必大家都刚开始玩的时候，完全是没有头绪的：别人怎么判断身份的？我为什么一点都听不懂呢？于是茫然失措。其实答案就在你的身边，我现在告诉你门在哪里，轻轻推开它你就能发现崭新的世界。<br>杀人游戏乃至整个发言类推理游戏（狼人杀，阿瓦隆等），其核心技巧和思想只有两个字。<br>【【【心态】】】<br>什么是心态？心态就是【一个人的心理状态，是最真实反应出此人想法、感受与目的的事物】。一个有意识的生物，只要不是被动性的行为，统统都是有心态可言的。除了精神错乱，任何心态也都是可以被解释的：ta只会做ta认为有道理的事情。饿了，才会吃；累了，才会睡；害怕了，才会脸色发白；高兴了，才会笑。总而言之，分析出行为背后的心态，就可以解释一切问题。<br>于是到这里也会产生一个老生常谈的问题：心态能不能被伪装？可以，但非常难，非常非常难。即使卧底也可能会暴露，即使演员也都会ng。【在拿到身份牌到游戏开始后短短几分钟的时间，可以说几乎任何人都不能及时做好心态调整，完美掩藏心态的可能性几乎为0】；只有没能被听出来的，没有不会暴露的。<br>另一个问题也常常被提到，心态和逻辑哪个更加重要？我可以很明确地回答你，【心态大于逻辑】。任何人能不能保证自己一定不会犯错，一定会面面俱到不遗漏任何一个可能性；而心态则不同，任何行为一定有其心态所在。因此，【逻辑也许出错，心态掩盖不了】，所以心态大于逻辑。你完全可以回想一下你玩过的游戏，你自己是晕民搞错人，逻辑自然是错的，但你的身份是民不是杀手，对不对？所以拿别人的逻辑有问题去出人，是不靠谱的。<br>能搞明白这些的话我们就进入正题，从比较普遍也比较平衡的杀人游戏2.0（警民匪）来探讨各自的心态。<br>【【基础心态】】<br>杀人游戏是个游戏，自然是分胜负的。因此任何身份的基础心态，都是“让自己获胜”。<br>当然，诸如报复社会、捣乱、闹情绪了不想赢了这种自然不算，也不列入讨论对象；【在正常情况下首先的心态肯定是让自己能够胜利】。<br>因此，当一名玩家行为【无论如何也解释不了成让某种身份获利】时，那么自然这名玩家不可能是这种身份。<br>然而要注意的是，由于玩家的水平高下不同，有可能他走了一步昏招，事实上有害无益；然而至少【在ta自己看来这一步是在帮ta自己获胜】，这就是心态大于逻辑。<br>基于这个基本心态，很容易推断出【当场上局势明显对某一方有利时，必然是有利方心态放松而得意，不利方紧张而害怕】。当场面局势混乱，好人方感到自己可能要输的时候，轻松的人只可能是杀手。<br>其他基础心态的例子我就不多列举了，状况太多，永远也说不完的。核心思想是【分析该行为的动机，分析哪种身份才会这么做】即可。<br>【【平民心态】】<br>平民心态有以下三个基本特征：<br>1.【很放松】<br>平民是场上唯一无任何技能的身份，他们的义务只有听发言，听完投票。警察要掩盖自己，要找杀手，万一跳了还得让民相信自己；杀手一直在找谁是警察，还得小心不能暴露自己的身份。因此这两种身份牌“同水平下”都没什么空闲，至少比平民忙多了。只有平民的空闲时间最大，而且即使输了也理所当然地认为是警察的锅。<br>所以，【当某位玩家做出了明显浪费思考时间闲得蛋疼却又和杀人游戏本身关联性很小的事情，那么ta很可能是平民】。理由很简单，有身份的人没那么空。<br>2.【胆子大】<br>平民胆子大，为什么呢？首先他们数量最多不怕死；其次他们知道自己是好人不心虚。在平民数量没有明显少到已经会影响票数之前，平民的死亡并不会带来多么惨重到无法接受的损失；平民阳光，白天站得住，不怕暴露。既不怕死，也不心虚，自然平民的胆子在三种身份里最大；【他们既不会害怕自己露出逻辑破绽：在平民的思维里自己是好人，自然不可能出现坏身份心态的发言；也不会害怕个别人的怀疑：平民由于完全确定自己的好身份，其第一反应必然是是“踩自己的人才有问题”】。因此如果某个人的发言破绽百出而ta甚至根本不去注意一下的话，这种“一本正经的胡说八道”，虽然不值得提倡，但反而能够证明他的好身份。<br>3.【易纠结】<br>平民是多疑的，其根本原因在于平民的信息获知量永远是场上最少的。在获得足够足够多的证据之前，平民对场上其余玩家的身份将始终保持在一种怀疑的态度上。正因为平民很难断定一个人的身份，就非常容易【同时出现两套在ta看来都说得通的逻辑推理】；也【始终希望场上的局势能够更加明朗化，能够不断听取更多的信息】。其中一套逻辑说明AC是杀手，另一套则说明BD是杀手；这时候平民很容易非常纠结下不了决定，希望能有更多的信息来拯救ta；而这么一纠结就容易甩锅，认为想错了也是警察的问题。因此，【当一个玩家表现出急切想要获得更多线索，努力分析场上局势；或纠结在两套逻辑里痛苦不堪时是平民身份的几率很高】。<br>以上提到了三种平民基本的心态，但并不代表平民只有我提到的三种心态；据出这些例子只是为了便于理解而已，具体归纳要靠自己。核心思想是永远不会变的，我在上文已经说过：【分析该行为是哪种身份会去做的事情】。<br>【【身份心态1】】<br>要讨论警察和杀手的心态，就要先分析他们和平民的不同之处，分析他们之间的相同之处和不同之处。因为不同，所以心态才会出现区别。<br>然则警察和杀手与平民的区别在哪里呢？<br>1.数量少，所以【怕暴露】，所以【不符合平民的胆子大心态】。<br>以普通的16人局，4警察4杀手8平民配置为例；警察和杀手数量都只有平民的一半。因此警察的获胜方式固然只有推出杀手，杀手杀警察也必定比杀平民要快；这就造成了警察和杀手都是对方阵营的第一目标，处在极度的危险之中。在感受到危险的心态下，警察和杀手的本能必然是【隐藏自己的身份，避免成为目标】。<br>因此，当你听出【一名玩家对自己的身份语焉不详，特别聊不干净，认身份认得特别模糊】时；不仅是聊身份本身，当【一名玩家对任何可能暴露自己身份的行为去刻意回避时】；尽管你并不能确定这是个杀手，却可以认定这是个身份。<br>什么行为可能暴露自己的身份？有很多很多。我从身份基础心态开始讲起，包括但不仅限于如下情况。<br>2.有团队，所以【容易发生抱团行为】，所以【不符合平民对除自己以外身份的认定始终处于怀疑态度的心态】。<br>平民知道的身份只有自己一人，因此他能绝对相信的也只有自己；除了自己以外的玩家，只有提供给他足够判断身份的信息之后，他才能【基本相信】那个玩家；并且很容易【在发生其他因素后又转而怀疑自己原本信任的玩家】。这也特别容易理解，想想你自己是不是玩到最后谁都不可信？看谁都像杀手？这就是典型的平民心态。<br>而身份牌则不一样，他们从第一个晚上开始即使什么都不做，也能直接知道自己可以绝对信任的人。<br>因此当场上出现突发情况：【有人踩到了警察确信的好身份A（警察自己或者警察验出的金水，其中以警察自己反应更加强烈）；或者踩到了匪徒A】时，有相当大的概率会发生【场上发言瞬间抱团分为保A和出A的两个集团】；在那些抱团的人里必定是有身份玩家的。通过分析这个A是什么身份，就可以判断出抱团的人的身份的总体走向。抱团的人里可能会有神民、晕民，但绝不会一个身份都没有；尤其当票数出现僵持时，更加会按捺不住统统跳将出来挺自己的团队。<br>总而言之，抱团是个非常值得关注的行为。【平民没有足够的动机来支持抱团，他们站队的唯一方式是信任某位玩家的逻辑或者身份；而身份牌则容易抱团，因为他们根本不需要理由来支持自己的队友】。<br>3.信息获取能力远远高于平民，所以【容易知道得太多而说漏嘴】，所以【不符合平民信息最少，需要不断的信息来支持他们对某位玩家身份的判断的心态】。<br>杀人游戏有句话，叫“聊得很睁眼”；意思就是【场上并未出现足够多的信息来证明某件事（比如某位玩家的身份，某种身份的数量）时，无条件认可了某件事而不说出任何理由】。这个【无条件、无理由是其中的关键，唯一能解释其原因的说法只有“事先知道”】。事先知道？凭什么？自然是有身份的。<br>一个平民在发言时，必然会先去关注其前置位发言的玩家的身份；只有平民自己能说服自己（至少是勉强说服自己）其人身份可信时，才会赞同其观点，并且【一定会说出自己对其身份的判断和理由】。就算毫无理由，只是就那么信了，【至少会说一句“我觉得”，此时理由就是自己的感觉】。这个理由很无厘头，但可以成立，毕竟勉强算是个理由。【只有身份才会出现没有任何理由就认可某件事】。<br>【【身份心态2】】<br>接下来分析警察和杀手的心态的不同。<br>警察和杀手的区别在哪里？能力不同，获胜方式不同。<br>晚上警察的能力是验，杀手的能力是杀；白天警察要推出杀手，杀手只要别推自己的同伴即可；警察的敌人只有杀手，杀手的敌人同时是警察和平民。<br>——<br>这就造成了警察和杀手心态的区别。<br>我们不妨用上面的身份心态1来区别他们。<br>怕暴露？假设场上的警察和杀手还算是均势（即数量相等，平民数量足够）时，【警察稍微比杀手不怕暴露一些】。<br>理由很简单，【警察有平民的支持，杀手则成为公敌，甚至自己的队友也会卖自己】。<br>尤其在警察优势局，警推在先，警察更是敢于跳出来理清局势求稳。<br>反之当杀手优势局，屠刀在先，杀手欢脱的可能比警察要小，这也是求稳。<br>爱抱团？【那要看这个风口浪尖的A是什么身份】。<br>【警察的心态自然是推的人越可疑越像匪徒越好，最好推个铁匪出去；实在找不到怀疑对象，也不能推金水】<br>【杀手的心态自然是推的人不是自己的同伴就行；有人怀疑自己的同伴，第一反应必然是转移视线；当实在同伴暴露得没法营救之时，则转为做好自己的身份】<br>因此通过判断A的身份就可以大致判断抱团成员的身份，上面我已经提到了。<br>说漏嘴？这分析起来特别复杂，【得看具体说漏了什么，这行为更像警察干的呢还是杀手干的】。<br>所以你会发现，警察和杀手的心态相似之处是很多的。你很可能判断出ta是个身份，但错误判断了ta是个警察，于是你袭警了。因此如果你只能听出是身份，却不能断定匪徒的时候，不要轻举妄动。<br>【【【总结】】】<br>【【不要拘泥】】<br>上面我给你列举了很多分析方式，但你要永远记住，核心只有【心态】两个字。任何我归纳得出来的心态，别人也会归纳出来；因此过于拘泥于具体招式是非常容易被针对和反利用的。你要做的永远是【透过现象看本质，去找出真正的心态】，而不是【照着我上面说的例子去做】。<br>同理，不要拘泥于方法，也不要拘泥于心态。当一个玩家的水平高到一定程度时，ta自然会有意识地回避可能的心态破绽，这时候你光听心态就可能听不出什么了。动作、表情、语气、用词、投票，所有方面都可以拿来利用，作为你推理的武器；心态只是帮你确定一个逻辑突破口。<br>要注意我说的这段话并不违反上面说的心态很难伪装。【一个杀手去伪装平民心态，可以伪装得“像那么回事”，但不可能伪装到“这绝对是民”的程度】。理由很简单，【平民心态，是可以做好自己的，这也是杀手心态；太过平民心态，这是帮平民去赢，这种事杀手不会做】。<br>玩一局杀人游戏的总体思路就是把确定的身份排掉，不确定的挨个推；藏得比较好的杀手往往在这些不确定的人里。<br>【【不要纠结】】<br>很多时候你往往会出现一种状况被你分析出不止一种可能，而且一时间还不能把可能性排除到只剩下一个。<br>当这种情况发生时，请你务必【不要纠结于猜想哪种可能是对的】。这是赌博，不会有让你确信的结果。最好的方式是【从其他角度入手，来试着通过别的因素排除掉其他可能】或者直接【换条思路来走，通过证明别的事实的同时回过头反证】。你不确定A是不是杀手？不要紧，仔细看ta行为是不是杀手。看不出？那分析其他能推导出A身份的玩家（比如和A抱团的人）是不是杀手。只纠结A本身只会浪费你大量的时间和脑力，得不偿失。<br>【【不要犹豫】】<br>要知道思考时间越少编织谎言的难度越高。当游戏越到后期，杀手们越能知道如何隐藏自己的身份。因此一个玩家一开始出现过杀手心态被你听出来了，而之后的发言却很好？不要犹豫，【那一定是杀手；只要出现一次坏心态，就是个坏身份】。一旦你【完全确定一个人的身份，就不要再让其发言来搅乱你的思路；除非该玩家是身份确定的好身份并且思路清晰，才可以拿来参考】。<br>【【不要害怕】】<br>下了论断就是下了，无论如何也别去改，让事实来说话。判断错了就是错了，承认，分析为什么错，分析怎么思考才是对的；这样分析能力才会提高。不敢下任何判断是进步不了的，这就和上面一样，纠结在可能性里无法选择。</p>
+<p>来源：<a href="https://www.zhihu.com/question/38844294/answer/78432233" target="_blank" rel="external">https://www.zhihu.com/question/38844294/answer/78432233</a><br>侵权删</p>
+<p>总结一下：<br>心态最重要，每个人都想获利！<br>平民：胆子大，轻松，爱犹豫，信息少，人数多<br>身份：数量少怕暴露，有团队易抱团，信息多<br>如何区分是警还是匪？<br>看局势，本着获利原则，看在场热点人物的身份。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/杀人游戏/" rel="tag"># 杀人游戏</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/11/17/关于自律/" rel="next" title="关于自律">
+                <i class="fa fa-chevron-left"></i> 关于自律
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/11/19/千岛湖/" rel="prev" title="千岛湖">
+                千岛湖 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/avatar.png"
+               alt="AARON CHAN" />
+          <p class="site-author-name" itemprop="name">AARON CHAN</p>
+           
+              <p class="site-description motion-element" itemprop="description">在这里，我会写一些我的想法，涉及行业、产品、金融、体育、动漫等一切我感兴趣的东西，如果能让你产生共鸣，我会很开心！</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">86</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">24</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">AARON CHAN</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
